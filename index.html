@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Using HTML & CSS Only</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <header class="header">
+        <h1 id="heading1">Hi, Welcome Back</h1>
+        <p id="para1" style="color: rgb(178, 177, 177);">New User? <b style="color: white; cursor: pointer;">Sign Up for free</b></p>
+      </header>
+      <form action="login.html">
+        <input type="email" name="email" placeholder="Your Email" autocomplete="off" required/>
+        <input type="password" name="password" placeholder="Your Password" required minlength="6"/>
+        <p id="para2">Password must be at least 6 characters</p>
+        <button id="btn1" type="submit">Sign In</button>
+
+        <div class="or">or</div>
+
+        <button id="btn2" type="button">Login with phone number</button>
+
+        <p>
+          We acknowledge that you read, and agree, to our
+          <u>Terms of Service</u> and our <u>Privacy Policy.</u>
+        </p>
+        <h3>@HrithikIsharwal</h3>
+      </form>
+    </section>
+  </body>
+</html>

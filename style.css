@@ -1,0 +1,114 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #939393,
+    #828282,
+    #717171,
+    #606060,
+    #505050,
+    #505050,
+    #505050,
+    #505050,
+    #606060,
+    #717171,
+    #828282,
+    #939393
+  );
+  background-repeat: no-repeat;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.main {
+  height: 747px;
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding: 10px 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+input {
+  height: 40px;
+  color: white;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 2px 10px;
+  border: 2px solid gray;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: 0px;
+}
+
+button:hover {
+  transform: scale(102%);
+}
+
+#heading1 {
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+#btn2{
+    background-color: transparent;
+    border: 2px solid gray;
+}
+
+#para2{
+    margin: 0px;
+    text-align: left;
+    padding: 0px;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: rgb(255, 47, 47);
+  background-image: url(check1.png);
+}
+
+input:valid:not(:placeholder-shown) {
+  background-image: url(check.png);
+}
+
+input:invalid:not(:placeholder-shown),
+input:valid:not(:placeholder-shown) {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
+
+input:invalid:not(:placeholder-shown) + p {
+    color: rgb(255, 47, 47);
+}
+
+input:valid:not(:placeholder-shown) + p {
+    color: rgb(110, 152, 110);
+}
+
+input:invalid ~ button[type="submit"] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
